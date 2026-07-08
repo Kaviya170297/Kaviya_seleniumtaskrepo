@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.2 on win32)" generated="2026-06-27T15:15:38.911226" rpa="false" schemaversion="5">
+<suite id="s1" name="RobotTask 19" source="C:\Users\kaviy\PycharmProjects\Robotframework_project\RobotTask_19">
+<suite id="s1-s1" name="Tests" source="C:\Users\kaviy\PycharmProjects\Robotframework_project\RobotTask_19\Tests">
+<suite id="s1-s1-s1" name="Login Test" source="C:\Users\kaviy\PycharmProjects\Robotframework_project\RobotTask_19\Tests\login_test.robot">
+<test id="s1-s1-s1-t1" name="Verify_Valid_Login" line="6">
+<kw name="Open Application" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-06-27T15:15:39.268214" level="INFO">Opening browser 'chrome' to base url 'https://robotsparebinindustries.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-06-27T15:15:39.267897" elapsed="1.598630"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-06-27T15:15:40.868139" elapsed="0.727525"/>
+</kw>
+<status status="PASS" start="2026-06-27T15:15:39.266895" elapsed="2.329053"/>
+</kw>
+<kw name="LoginToApplication" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-27T15:15:41.604535" level="INFO">Typing text 'maria' into text field 'id:username'.</msg>
+<arg>id:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-27T15:15:41.598894" elapsed="0.299263"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-27T15:15:41.899516" level="INFO">Typing text 'thoushallnotpass' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-27T15:15:41.898504" elapsed="0.165146"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-06-27T15:15:42.064597" level="INFO">Clicking element 'xpath://button[normalize-space()='Log in']'.</msg>
+<arg>xpath://button[normalize-space()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-27T15:15:42.064049" elapsed="0.092687"/>
+</kw>
+<arg>maria</arg>
+<arg>thoushallnotpass</arg>
+<status status="PASS" start="2026-06-27T15:15:41.597961" elapsed="0.559007"/>
+</kw>
+<kw name="VerifyLoginissuccessful" owner="keywords">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath://button[@id='logout']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-06-27T15:15:42.158163" elapsed="2.715000"/>
+</kw>
+<status status="PASS" start="2026-06-27T15:15:42.157628" elapsed="2.715693"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-06-27T15:15:49.874956" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-06-27T15:15:44.873814" elapsed="5.001420"/>
+</kw>
+<kw name="Logout" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-06-27T15:15:49.876508" level="INFO">Clicking element 'xpath://button[@id='logout']'.</msg>
+<arg>xpath://button[@id='logout']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-27T15:15:49.876302" elapsed="0.050639"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-06-27T15:15:49.927154" elapsed="2.195025"/>
+</kw>
+<status status="PASS" start="2026-06-27T15:15:49.875964" elapsed="2.246321"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-06-27T15:15:52.122643" elapsed="0.000139"/>
+</kw>
+<status status="PASS" start="2026-06-27T15:15:39.265725" elapsed="12.857297"/>
+</test>
+<status status="PASS" start="2026-06-27T15:15:38.956110" elapsed="13.168135"/>
+</suite>
+<status status="PASS" start="2026-06-27T15:15:38.954048" elapsed="13.171138"/>
+</suite>
+<status status="PASS" start="2026-06-27T15:15:38.912953" elapsed="13.213006"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="RobotTask 19" id="s1" pass="1" fail="0" skip="0">RobotTask 19</stat>
+<stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">RobotTask 19.Tests</stat>
+<stat name="Login Test" id="s1-s1-s1" pass="1" fail="0" skip="0">RobotTask 19.Tests.Login Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
